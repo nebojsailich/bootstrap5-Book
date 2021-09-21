@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/main.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <title>Book</title>
+    <style>
+        section{
+            padding: 60px 0  ;
+
+            
+           
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- navbar -->
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light  ">
+     <div class="container-xxl">
+     <a href="#intro" class="navbar-brand">
+         <span class="fw-normal text-secondary">
+            <i class="bi bi-book-half text-altdark "></i>
+             By Nebojsa Ilic
+         </span>
+     </a>
+     <!-- toggle button for mobile nav-->
+
+     <button class="nav-bar-toggler d-md-none bg-light border-0 " type="button" data-bs-toggle="collapse"
+     data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false"
+     aria-label="Toggle navigation">
+ <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    
+    <!-- navbar links -->
+
+    <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#topics" >About The Book</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#reviews" >Reviews</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact" >Contact</a>
+            </li>
+            <li class="nav-item d-md-none ">
+                <a class="nav-link" href="#pricing" >Pricing</a>
+            </li>
+            <li class="nav-item ms-2 d-none d-md-inline">
+                <a class="btn btn-secondary bg-altdark" href="#pricing" >Buy Now</a>
+            </li>
+        </ul>
+    </div>
+
+   
+ </div>
+</nav>
+
+    <!-- main image and intro text-->
+    
+    <section id="intro">
+        <div class="container-lg">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-5 text-center text-md-start">
+                    <h1>
+                        <div class="display-2">Eloquent Javascript</div>
+                        <div class="lead my-4 text-muted">This is a book about JavaScript, programming, and the wonders of the digital.</div>
+                      
+                    </h1>
+                    <p class="lead my-4 text-muted">A Modern Introduction to Programming <br> By Marijin Haverbeke <br>3rd Edition (2018)</p>
+                        <a href="#pricing" class="btn btn-outline-primary  btn-lg ">Buy Now</a>
+                        
+                        <!-- open sidebar / offcanvas -->
+
+                        <a href="#sidebar" class="d-block mt-3 text-decoration-none" data-bs-toggle="offcanvas"
+                        role="button" aria-controls="sidebar">
+                      <h5 class="lead fw-bold my-4 "><i class="bi bi-search mx-1 "></i>Explore my other Book</h5>
+                    </a>
+
+                </div>
+             <div class="col-md-5 text-center d-none d-md-block">
+                 <!-- tooltip -->
+                 <span class="tt" data-bs-placement="bottom" title="Book Cover">
+                    <img class="img-fluid" src="/img/book.jpg" alt="book cover">
+                 </span>
+               
+             </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- pricing plans-->
+    
+    <section id="pricing" class="bg-light mt-5">
+     <div class="container-lg">
+         <div class="text-center">
+             <h2><i class="bi bi-wallet-fill px-2 text-altdark"></i>Pricing Plans</h2>
+             <p class="lead text-muted">Choose a pricing plan to suit you</p>
+         </div>
+
+         <div class="row my-5 align-items-center justify-content-center g-3">
+             <div class="col-8 col-lg-4 col-xl-3">
+                 <div class="card border-0">
+                     <div class="card-body text-center py-4">
+                       <h4 class="card-title">Starter Edition</h4>
+                       <p class="lead card-subtitle">Book Download</p>
+                       <p class="display-5 my-4 text-primary fw-bold">€18.99</p>
+                       <p class="cart-text mx-5 text-muted d-none d-lg-block">Only download book</p>
+                           <a href="#" class="btn btn-outline-primary btn-lg mt-3">Buy Now</a>
+                     </div>
+                 </div>
+             </div>
+             <div class="col-9 col-lg-4">
+                <div class="card border-primary border-2">
+                    <div class="card-header text-center text-primary">Most Popular</div>
+                    <div class="card-body text-center py-5">
+                        <h4 class="card-title">Complete Edition</h4>
+                        <p class="lead card-subtitle">Book Download & all Updates</p>
+                        <p class="display-4 my-4 text-success fw-bold">€26.99</p>
+                        <p class="card-text mx-5 text-muted d-none d-lg-block">A book with all the updates</p>
+                            <a href="#" class="btn btn-outline-primary btn-lg mt-3">
+                                Buy Now
+                            </a>
+                         
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-8 col-lg-4 col-xl-3">
+                <div class="card border-0">
+                    <div class="card-body text-center py-4">
+                      <h4 class="card-title">Ultimate Edition</h4>
+                      <p class="lead card-subtitle">Download, updates & extras</p>
+                      <p class="display-5 my-4 text-primary fw-bold">€32.99</p>
+                      <p class="cart-text mx-5 text-muted d-none d-lg-block">A book with all the updates and additions</p>
+                          <a href="#" class="btn btn-outline-primary btn-lg mt-3">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+         </div>
+    </div>
+    </section>
+
+
+
+    <!-- topics at a glance Accordion -->
+    
+    <section id="topics">
+        <div class="container-md">
+          <div class="text-center">
+     
+             <h2> <i class="bi bi-book px-2 text-altdark"></i>Inside the Book</h2>
+           
+             <h3 class=" lead fw-light my-4">JavaScript lies at the heart of almost every modern web application, 
+                from social apps like Twitter to browser-based game frameworks like
+                 Phaser and Babylon. Though simple for beginners to pick up and play 
+                 with, JavaScript is a flexible, complex language that you can use 
+                 to build full-scale applications.
+
+               This much anticipated and thoroughly revised third edition of Eloquent 
+               JavaScript dives deep into the JavaScript language to show you how to
+                write beautiful, effective code. It has been updated to reflect the 
+                current state of JavaScript and web browsers and includes brand-new
+                 material on features like class notation, arrow functions, iterators, 
+                 async functions, template strings, and block scope. A host of 
+                 new exercises have also been added to test your skills and keep 
+                 you on track.</h3>
+            </div>
+          
+          <div class="row my-5 g-5 justify-content-around align-items-center">
+              <div class="col-6 col-lg-4">
+                  <img src="/img/book2.png" class="img-fluid" alt="book">
+              </div>
+
+              
+              <div class="col-lg-6">
+              <!-- accordion -->
+              <p class="lead  text-muted text-center my-4">A quick glance at the topics you'll learn</p>
+              <div class="accordion" id="chapters">
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="heading-1">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#chapter-1" aria-expanded="true"
+                        aria-controls="chapter-1">
+                        Chapter 1 - Values, Types, and Operators
+                    </button>
+                      </h2>
+                      <div id="chapter-1" class="accordion-collapse collapse "
+                      aria-labelledby="heading-1" data-bs-parent="#chapters">
+                    <div class="accordion-body">
+                        <p>Below the surface of the machine, 
+                            the program moves. Without effort, 
+                            it expands and contracts. 
+                            In great harmony, electrons scatter and regroup. 
+                            The forms on the monitor are but ripples on the water. 
+                            The essence stays invisibly below. <br>
+<br>
+                            Master Yuan-Ma, The Book of Programming</p>
+                        
+                    </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion" id="chapters">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-2">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#chapter-2" aria-expanded="true"
+                          aria-controls="chapter-2">
+                          Chapter 2 - Program Structure
+                      </button>
+                        </h2>
+                        <div id="chapter-2" class="accordion-collapse collapse "
+                        aria-labelledby="heading-2" data-bs-parent="#chapters">
+                      <div class="accordion-body">
+                          <p>And my heart glows bright red under my filmy, 
+                              translucent skin and they have to administer 10cc 
+                              of JavaScript to get me to come back. 
+                              (I respond well to toxins in the blood.) Man,
+                               that stuff will kick the peaches right out your gills!
+                                <br>
+                                <br>
+
+                             Why's (Poignant) Guide to Ruby</p>
+                           
+                      </div>
+                      </div>
+                    </div>
+
+                    <div class="accordion" id="chapters">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading-3">
+                              <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#chapter-3" aria-expanded="true"
+                              aria-controls="chapter-3">
+                              Chapter 3 - Functions
+                          </button>
+                            </h2>
+                            <div id="chapter-3" class="accordion-collapse collapse "
+                            aria-labelledby="heading-3" data-bs-parent="#chapters">
+                          <div class="accordion-body">
+                              <p>People think that computer science is the
+                                   art of geniuses but the actual reality 
+                                   is the opposite, just many people doing 
+                                   things that build on each other, 
+                                   like a wall of mini stones.
+                                   <br>
+                                   <br>
+
+                                Donald Knuth</p>
+                                 
+                          </div>
+                          </div>
+                        </div>
+
+                        <div class="accordion" id="chapters">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading-4">
+                                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                  data-bs-target="#chapter-4" aria-expanded="true"
+                                  aria-controls="chapter-4">
+                                  Chapter 4 - Data Structures: Objects and Arrays
+                              </button>
+                                </h2>
+                                <div id="chapter-4" class="accordion-collapse collapse "
+                                aria-labelledby="heading-4" data-bs-parent="#chapters">
+                              <div class="accordion-body">
+                                  <p>On two occasions I have been asked, 
+                                      ‘Pray, Mr. Babbage, if you put into the machine wrong 
+                                      figures, will the right answers come out?’ [...] 
+                                      I am not able rightly to apprehend the kind of 
+                                      confusion of ideas that could provoke such a question.
+                                        <br>
+                                        <br>
+                                    Charles Babbage, Passages from the Life of a Philosopher (1864)</p>
+                                     
+                              </div>
+                              </div>
+                            </div>
+
+                            <div class="accordion" id="chapters">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading-5">
+                                      <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                      data-bs-target="#chapter-5" aria-expanded="true"
+                                      aria-controls="chapter-5">
+                                      Other Chapters...
+                                  </button>
+                                    </h2>
+                                    <div id="chapter-5" class="accordion-collapse collapse "
+                                    aria-labelledby="heading-5" data-bs-parent="#chapters">
+                                  <div class="accordion-body">
+                                      <p> Chapter 5 - Higher-order Functions <br>
+                                        Chapter 6 - The Secret Life of Objects <br>
+                                        Chapter 7 - Project: A Robot <br>
+                                        Chapter 8 - Bugs and Errors <br>
+                                        Chapter 9 - Regular Expressions <br>
+                                        Chapter 10 - Modules <br>
+                                        Chapter 11 - Asynchronous Programming <br>
+                                        Chapter 12 - Project: A Programming Language <br>
+                                        Chapter 13 - JavaScript and the Browser <br>
+                                        Chapter 14 - The Document Object Model <br>
+                                        Chapter 15 - Handling Events <br>
+                                        Chapter 16 - Project: A Platform Game <br>
+                                        Chapter 17 - Drawing on Canvas <br>
+                                        Chapter 18 - HTTP and Forms  <br>
+                                        Chapter 19 - Project: A Pixel Art Editor <br>
+                                        Chapter 20 - Node.js <br>
+                                        Chapter 21 - Project: Skill-Sharing Website <br>
+                                    </p>
+                                          
+                                  </div>
+                                  </div>
+                                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- reviews list -->
+    <section id="reviews" class="bg-light">
+        <div class="container-lg">
+            <div class="text-center">
+                <h2><i class="bi bi-stars px-2 text-altdark"></i>Book Reviews</h2>
+                <p class="lead">What do you think of the Book ?</p>
+            </div>
+
+            <div class="row justify-content-center my-5">
+                <div class="col-lg-8">
+                    <div class="list-group">
+                        <div class="list-group-item py-3">
+                            <div class="pb-2">
+                                <i class="bi bi-star-fill text-altdark"></i>
+                                <i class="bi bi-star-fill text-altdark"></i>
+                                <i class="bi bi-star-fill text-altdark"></i>
+                                <i class="bi bi-star-fill text-altdark"></i>
+                                <i class="bi bi-star-fill text-altdark"></i>
+                            </div>
+                            <h5 class="mb-1"> Excellent JavaScript book for beginners</h5>
+                            <p class="mb-1">This book is unique in that it starts out with JavaScript 
+                                as a programming language, and continues delving further and further 
+                                into how the language works - but without touching on the
+                                 browser model until several chapters in. It comes at 
+                                 JavaScript purely as a programming language first, then 
+                                 getting into its uses (which include browser programming) later.</p>
+                                <small>Review by Marko</small>
+                        </div>
+                        <div class="list-group-item py-3">
+                            <div class="pb-2">
+                                <i class="bi bi-star-fill text-altdark"></i>
+                                <i class="bi bi-star-fill text-altdark"></i>
+                                
+                            </div>
+                            <h5 class="mb-1">Not for absolute begginers</h5>
+                            <p class="mb-1">I was required to purchase this book for a JavaScript class.
+                                This book is not for absolute beginners or those with minimal 
+                                programming experience. This book is more tailored to those
+                                 with programming experience who want to learn JavaScript. 
+                                 If this is you the book is better suited for you.
+
+                                If you are learning JavaScript primarily or solely for web design purposes skip this book.</p>
+                                <small>Review by Nebojsa</small>
+                        </div>
+                        <div class="list-group-item py-3">
+                            <div class="pb-2">
+                                <i class="bi bi-star-fill text-altdark"></i>
+                                <i class="bi bi-star-fill text-altdark"></i>
+                                <i class="bi bi-star-fill text-altdark"></i>
+                                <i class="bi bi-star-half text-altdark"></i>
+                              
+                            </div>
+                            <h5 class="mb-1">
+                                 Very readable and informative</h5>
+                            <p class="mb-1">Most books on programming are quite boring to read.
+                                 This is a pleasant exception to that rule.
+                                  I found the book both quite readable and informative.
+                                   Personally I love JavaScript as a programming language. 
+                                   This book has helped be move back to JavaScript after
+                                    using some other more rigid languages. NOT done yet,
+                                     but it is well written. 
+                                     The beginning works well for all programming languages
+                                      not just JavaScript. I found the example a tad hard
+                                       to follow, but then again I would rather do it than 
+                                       read about it!</p>
+                                <small>Review by Sara</small>
+                        </div>
+                        <div class="list-group-item py-3">
+                            <div class="pb-2">
+                                <i class="bi bi-star-fill text-altdark"></i>
+                                <i class="bi bi-star-fill text-altdark"></i>
+                                <i class="bi bi-star-fill text-altdark"></i>
+                               
+                            </div>
+                            <h5 class="mb-1"> Not Very Thorough</h5>
+                            <p class="mb-1">This book does not really give much information 
+                                about javascript specifically. I found it 
+                                very distracting to find errors in the code. 
+                                There were words that were misspelled and sentences
+                                 that were poorly formed. Even though this does not 
+                                 speak to the technical part of the publication,
+                                  it did make reading it annoying. I would consider 
+                                  the book okay but not anything special.</p>
+                                <small>Review by Tamara</small>
+                        </div>
+                        <div class="list-group-item py-3">
+                            <div class="pb-2">
+                                <i class="bi bi-star-fill text-altdark"></i>
+                                <i class="bi bi-star-fill text-altdark"></i>
+                                <i class="bi bi-star-fill text-altdark"></i>
+                                <i class="bi bi-star-fill text-altdark"></i>
+                                <i class="bi bi-star-half text-altdark"></i>
+                            </div>
+                            <h5 class="mb-1">An exhaustive introduction and a good refresher.</h5>
+                            <p class="mb-1">I definitely recommend this book to someone who has used the language before and could use a refresher. 
+                                You will learn or remember several interesting 
+                                features that will improve your work.
+
+                                I also recommend this to a new programmer, 
+                                but with the caveat that this will not give a complete education 
+                                on the language. It attempts to and mostly succeeds,
+                                 but Haverbeke's opinionated style prevents this from being a
+                                  complete education on best practices. Nevertheless, 
+                                  I don't think you can do much better: someone coming to the 
+                                  language with no experience will always improve 
+                                  in both style and quality, and this book provides an excellent 
+                                  introduction to both.</p>
+                                <small>Review by Nemanja</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+   
+   
+    <!-- contact form -->
+    <!-- form-control, form-label, form-select, input-group, input-group-text -->
+    
+    <section id="contact">
+        <div class="container-lg">
+            <div class="text-center">
+                <h2><i class="bi bi-person-lines-fill px-2 text-altdark"></i>Get in Touch</h2>
+                <p class="lead">For all questions, fill out the form to contact me directly...</p>
+            </div>
+
+            <div class="row justify-content-center my-5">
+                <div class="col-lg-6">
+                    <form >
+                        <label for="email" class="form-label">Email Adress:</label>
+                        
+                        <div class="mb-4 input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-envelope-fill"></i>
+
+                            </span>
+                            <input type="email" class="form-control" id="email"
+                            placeholder="e.g.nebojsaftg@gmail.com">
+                           
+                            <!-- tooltip -->
+                            <span class="input-group-text">
+                                <span class="tt" data-bs-placement="bottom" title="Enter an email address we can reply to">
+
+                                <i class="bi bi-question-circle text-muted"></i>
+                            </span>
+                            </span>
+                        </div>
+                       
+
+                         <label for="name" class="form-label">Name:</label>
+                         <div class="input-group mb-4">
+                            <span class="input-group-text">
+                                <i class="bi bi-person-fill"></i>
+                            </span>
+                            <input type="text" class="form-control" id="name" placeholder="e.g. Nebojsa">
+                            <!-- tooltip -->
+                            <span class="input-group-text">
+                                <span class="tt" data-bs-placement="bottom" title="Enter a name">
+
+                                <i class="bi bi-question-circle text-muted"></i>
+                            </span>
+                            </span>
+                        </div>
+
+                        
+
+                         <label for="subject" class="form-label">What's is your question about?</label> 
+                         <div class="input-group mb-4">
+                            <span class="input-group-text">
+                               
+                                <i class="bi bi-chat-right-dots-fill"></i>
+                            </span>
+                            <select name="" id="subject" class="form-select">
+                                <option value="pricing" selected >Pricing query</option>
+                                <option value="content">Content query</option>
+                                <option value="other">Other query</option>
+                            </select>
+                         </div>
+                       
+
+                         
+                         <div class="form-floating mb-4 mt-5">
+                            <textarea id="query" class="form-control" style="height: 140px;"></textarea>
+                            <label for="query">Your query...</label>
+                        </div>
+
+                        <div class="mb-4 text-center">
+                            <button type="submit" class="btn btn-secondary bg-altdark">Submit</button>
+                        </div>
+                        
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- get updates / modal trigger -->
+    
+    <section class="bg-light">
+        <div class="container">
+            <div class="text-center">
+                <h2>Stay in the Loop</h2>
+                <p class="lead">Get the latest updates...</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <p class="text-muted my-4">The next update will be released in June 2022</p>
+                        <button class="btn btn-altdark text-light" data-bs-toggle="modal" 
+                           data-bs-target="#reg-modal">
+                           Register for Updates
+                        </button>
+                </div>
+            </div>
+        </div>
+        <div class=" col-md-8 text-center my-4 " id="btn-click">
+            <a class="btn btn-primary position-fixed bottom-0 end-0 m-3 " href="#main-nav" ><i class="bi bi-arrow-up"></i></a>
+        </div>
+       
+    </section>
+
+    
+
+
+
+
+
+
+
+    <!-- modal itself -->
+
+    <div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title"
+    aria-hidden="true">
+   <div class="modal-dialog">
+       <div class="modal-content">
+           <div class="modal-header">
+               <h5 class="modal-title" id="modal-title ">Get the Latest Updates</h5>
+               <button type="button" class="btn-close" data-bs-dismiss="modal"
+               aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>New update coming soon...</p>
+                    <label for="modal-email" class="form-label" >Your email address</label>
+                    <input type="email" class="form-control" id="modal-email" placeholder="e.g.nebojsa87@gmail.com">
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary text-light">Submit</button>
+            </div>
+       </div>
+   </div>
+</div>
+
+
+
+<!-- offcanvas -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar"
+aria-labelledby="sidebar-label">
+<div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="sidebar-label">My Other Books</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+    aria-label="Close"></button>
+</div>
+<div class="offcanvas-body">
+    <p>A few more titles that deserve attention</p>
+
+         <!-- dropdown -->
+
+         <div class="dropdown mt-3">
+             <button class="btn btn-altdark dropdown-toggle" type="button"
+             id="book-dropdown" data-bs-toggle="dropdown">
+             Choose a book title
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="book-dropdown">
+                <li><a href="https://www.bookdepository.com/JavaScript-Good-Parts-Douglas-Crockford/9780596517748?ref=grid-view&qid=1627673607245&sr=1-1" class="dropdown-item " target="_blank"><i class="bi bi-dot"></i> JavaScript: The Good Parts</a></li>
+                <li><a href="https://www.bookdepository.com/You-Dont-Know-JS-Yet-Kyle-Simpson/9798602477429?ref=grid-view&qid=1627673945479&sr=1-1" class="dropdown-item" target="_blank"><i class="bi bi-dot"></i> You Don’t Know JS Yet</a></li>
+                <li><a href="https://www.bookdepository.com/Secrets-JavaScript-Ninja-Second-Edition-John-Resig/9781617292859?ref=grid-view&qid=1627674010123&sr=1-19" class="dropdown-item" target="_blank"><i class="bi bi-dot"></i> Secrets of the JavaScript Ninja (2 Edition)</a></li>
+
+            </ul>
+
+
+         </div>
+
+
+
+
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" 
+    crossorigin="anonymous"></script>
+    <script>
+        const tooltips = document.querySelectorAll('.tt')
+        tooltips.forEach(t => {
+            new bootstrap.Tooltip(t)
+        })
+    </script>
+</body>
+</html>
